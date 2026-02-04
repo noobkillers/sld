@@ -7,6 +7,7 @@ class Settings(BaseSettings):
     database_url: str = "sqlite:///./sld.db"
     storage_path: str = "./storage"
     reports_path: str = "./reports"
+    symbol_model_path: str = "./models/symbol_classifier.joblib"
     allow_origins: list[str] = ["*"]
 
 

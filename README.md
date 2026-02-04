@@ -39,6 +39,22 @@ pip install -r requirements.txt
 uvicorn app.main:app --reload
 ```
 
+### Train symbol classifier
+
+Generate a synthetic dataset or provide curated crops under `data/symbols/<symbol_class>/*.png`. To generate an extensive synthetic dataset:
+
+```bash
+python scripts/generate_symbol_dataset.py --output data/symbols --samples 500
+```
+
+Then train the classifier:
+
+```bash
+python scripts/train_symbols.py --dataset data/symbols --output models/symbol_classifier.joblib
+```
+
+The trained model is loaded automatically by the vision service when present at `models/symbol_classifier.joblib`.
+
 ### Frontend
 
 ```bash

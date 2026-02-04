@@ -11,6 +11,7 @@
    - Classical CV for line/shape detection.
    - In-house OCR (Tesseract/PaddleOCR) for labels and ratings.
    - Output normalized symbol + label map.
+   - Symbol classifier trained locally on curated SLD icon dataset.
 
 3. **Digital Twin Core**
    - Equipment is assigned UUID + semantic ID.
