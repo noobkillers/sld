@@ -1,0 +1,10 @@
+{
+  "tenants": [
+    {
+      "tenant_id": "demo-utility",
+      "subscription_tier": "Enterprise",
+      "industry": "utilities",
+      "retention_days": 3650
+    }
+  ]
+}
